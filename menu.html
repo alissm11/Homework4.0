@@ -1,0 +1,160 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dawg Pizza Menu Page">
+        <meta name="author" content="alissm11">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" href="img/pizza_icon.png">
+        <title>Dawg Pizza Menu</title>
+
+        <!-- hot link to Bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+        <!-- our own stylesheet for overrides -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".dpizza-navbar-menu">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                       
+                    </button>
+                    <a class="navbar-brand" href="index.html">Dawg Pizza <img src="img/pizza_icon.png" alt="Pizza Slice Icon"></a>
+                </div>
+
+                <div class="collapse navbar-collapse dpizza-navbar-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="dawg-pizza-carousel" class="carousel slide">
+                <!-- slide indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#dawg-pizza-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#dawg-pizza-carousel" data-slide-to="1"></li>
+                    <li data-target="#dawg-pizza-carousel" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- slides --> 
+                <div class="carousel-inner">
+                    <!-- slide -->
+                    <div class="item active">
+                        <img src="img/pizza1.jpg" alt="Homemade Pizza">
+                        <div class="carousel-caption">
+                            <p>Homemade Pizza</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/pizza-order.jpg" alt="Pizza Order">
+                        <div class="carousel-caption">
+                            <p>Order Now</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/pizza-oven.jpg" alt="Pizza Oven">
+                        <div class="carousel-caption">
+                            <p>Our Wood-Fired Pizza Oven</p>
+                        </div>
+                    </div>
+                </div> <!-- .slides -->
+
+                <!-- left-right controls -->
+                <a class="left carousel-control" href="#dawg-pizza-carousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#dawg-pizza-carousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>                
+            </div> <!-- carousel -->  
+
+            
+            <div class="menu">
+                <h2 class="text-center">Dawg Pizza Menu</h2>
+                <h3>Pizzas</h3>
+                <p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes: </p>
+                <ul>
+                    <li>Small (12")</li>
+                    <li>Medium (14")</li>
+                    <li>Large (17")</li>
+                </ul>
+                <p><strong>All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</strong></p>
+                <!-- template card for each entry 
+                this will not be displayed, only used by code -->
+                <div class="pizza">
+                    <div class="tempp">
+                        <dl>
+                            <dt class="name"></dt>
+                            <img class="pic" src="" alt=""/>
+                                <dd class="item">
+                                    <span class="description"></span>
+                                    <strong>
+                                        (<span class="price sm"></span>/<span class="price md"></span>/<span class="price lg"></span>)
+                                    </strong>
+                                </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <p></p>
+                <p><img src="img/carrot.png" alt="vegetarian icon"> = Vegetarian</p>
+
+                <h3>Drinks</h3>
+                <div class="drink">
+                    <div class="tempd">
+                        <ul>
+                            <li class="item">
+                                <span class="name"></span>
+                                <strong>(<span class="price"></span>)</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Desserts</h3>
+                <div class="dessert">
+                    <div class="tempds">
+                        <ul>
+                            <li class="item">
+                                <span class="name"></span>
+                                <strong>(<span class="price"></span>)</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div> <!-- .menu --> 
+
+        
+
+            <footer>
+                <p>Call us for delivery: 206-555-1212 <br> &copy;2013 Dawg Pizza</p>
+            </footer>
+        </div> <!-- .container --> 
+
+        <!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        
+        <!-- direct link to menu script -->
+        <script src="http://www.dawgpizza.com/orders/menu.js"></script>
+
+        <!-- my own JavaScript file, which will use the menu data structure -->
+        <script src="js/menu-items.js"></script>
+
+        <!-- auto-play the carousel -->
+        <script>
+            $('.carousel').carousel();
+        </script>
+    </body>
+</html>

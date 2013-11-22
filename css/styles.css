@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Chango);
+
+.tempp {
+	display: none; 
+}
+
+.tempd {
+	display: none; 
+}
+
+.tempds {
+	display: none;
+}
+
+.pizza .name {
+	font-weight: bold; 
+	float: left;
+	color: #52197E; 
+}
+
+.pic {
+	float: left; 
+	padding-left: 5px; 
+}
+
+.item {
+	clear: both;
+}
+
+.drink .price {
+	display: inline; 
+}
+
+.dessert .price {
+	display: inline; 
+}
+
+
+
+
+h1 {
+	color: #52197E;
+	font-weight: bold; 
+	font-family: 'Chango';
+	font-size: 500%;  
+}
+
+h2 {
+	color: #52197E;
+	font-family: 'Chango';
+	font-size: 300%;  
+}
+
+h3 {
+	color: #52197E;
+	font-family: 'Chango'; 
+}
+
+.logo {
+	width: 90%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8; 
+}
+
+.logo:hover {
+	opacity: 1; 
+}
+
+.find-us {
+	color: #000;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	text-decoration: none; 
+}
+
+.contact-info {
+	text-align: center; 
+}
+
+iframe {
+	width: 80%; 
+}
+
+footer {
+    border-top: 1px solid #000; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer p {
+    padding: 5px; 
+}

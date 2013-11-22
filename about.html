@@ -1,0 +1,106 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dawg Pizza About Us Page">
+        <meta name="author" content="alissm11">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" href="img/pizza_icon.png">
+        <title>Dawg Pizza About Us</title>
+
+        <!-- hot link to Bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+        <!-- our own stylesheet for overrides -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".dpizza-navbar-menu">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                       
+                    </button>
+                    <a class="navbar-brand" href="index.html">Dawg Pizza <img src="img/pizza_icon.png" alt="Pizza Slice Icon"></a>
+                </div>
+
+                <div class="collapse navbar-collapse dpizza-navbar-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li class="active"><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="dawg-pizza-carousel" class="carousel slide">
+                <!-- slide indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#dawg-pizza-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#dawg-pizza-carousel" data-slide-to="1"></li>
+                    <li data-target="#dawg-pizza-carousel" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- slides --> 
+                <div class="carousel-inner">
+                    <!-- slide -->
+                    <div class="item active">
+                        <img src="img/pizza1.jpg" alt="Homemade Pizza">
+                        <div class="carousel-caption">
+                            <p>Homemade Pizza</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/pizza-order.jpg" alt="Pizza Order">
+                        <div class="carousel-caption">
+                            <p>Order Now</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/pizza-oven.jpg" alt="Pizza Oven">
+                        <div class="carousel-caption">
+                            <p>Our Wood-Fired Pizza Oven</p>
+                        </div>
+                    </div>
+                </div> <!-- .slides -->
+
+                <!-- left-right controls -->
+                <a class="left carousel-control" href="#dawg-pizza-carousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#dawg-pizza-carousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>                
+            </div> <!-- carousel -->  
+
+            <h2 class="text-center">About Dawg Pizza</h2>
+            
+            <h3>Our Story</h3>
+            <p>Dawg Pizza was started in 2013 with one simple goal: to get the students of the University of Washington to eat our pizza for every single meal. Well, maybe not every single meal, but most of them anyway. Cold pizza is really good for breakfast. And who can deny that pizza for lunch is really tasty? And when you've had a long day of classes and you're hungry, why not order a pizza for dinner too? And what should you do when you get hungry during that late-night study session? Order a pizza! That's where we come in.</p>
+            <p>We make the traditional pizzas, but we also mix things up with non-traditional ingredients. Tomato sauce is great, but how about plum, peanut, soy, or teriyaki sauce? You can get pepperoni anywhere, so how about some roasted duck or venison instead? Mushrooms are nice, but what about stir-fried cabbage and fried egg? We do it all.</p>
+            <p>Our pizzas are the best in Seattle, but don't take our word for it. Try one and you'll see!</p>
+                
+            <h3>Our Ecological Impact</h3>
+            <p>We love the environment, and we take extra steps to reduce our ecological footprint. For example, we collect and burn only naturally fallen wood from happy trees located within 100 miles of the restaurant. All our ingredients are fair-trade, organic, and residents of Washington State. Our meats come from animals that were named, raised in the ranchers' homes as if they were their children, and educated in the finest animal universities. The wheat for our dough is crushed by hand using a mortar and pestle. Our pizza boxes are made from recycled exam Blue Books and are guaranteed to decompose within seconds of finishing your pizza. We deliver using only rodent-powered vehicles and we all bike to work. We love the environment!</p> 
+            
+            <footer>
+                <p>Call us for delivery: 206-555-1212 <br> &copy;2013 Dawg Pizza</p>
+            </footer>
+        </div> <!-- .container --> 
+
+        <!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+        <!-- auto-play the carousel -->
+        <script>
+            $('.carousel').carousel();
+        </script>
+    </body>
+</html>
