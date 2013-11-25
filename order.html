@@ -1,0 +1,202 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dawg Pizza Order Page">
+        <meta name="author" content="alissm11">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="shortcut icon" href="img/pizza_icon.png">
+        <title>Dawg Pizza Order Online</title>
+
+        <!-- hot link to Bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+        <!-- our own stylesheet for overrides -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".dpizza-navbar-menu">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                       
+                    </button>
+                    <a class="navbar-brand" href="index.html">Dawg Pizza <img src="img/pizza_icon.png" alt="Pizza Slice Icon"></a>
+                </div>
+
+                <div class="collapse navbar-collapse dpizza-navbar-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="active"><a href="order.html">Order</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <form method="POST" action="http://dawgpizza.com/orders/" class="form-horizontal cart-form" role="form">
+
+                <div class="page-header">
+                    <h2 class="text-center">Dawg Pizza Order Form</h2>
+                    <p class="text-center lead">We deliver only within the Seattle city limits from noon to 11:00pm. We accept cash or credit cards on delivery. No topping substitutions on deliveries!</p>
+
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="first-name">Name</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="first-name" id="first-name" placeholder="first name" required>
+                        </div>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="last-name" id="last-name" placeholder="last name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="addr-1">Address</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" name="addr-1" id="addr-1" placeholder="street address" required>
+                            <input type="text" class="form-control" name="addr-2">
+                            <input type="text" class="form-control" name="addr-3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="city">Zip</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" name="zip" placeholder="zip code" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="city">Phone</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" name="phone" placeholder="primary phone number" required>
+                        </div>
+                    </div>
+
+                </div>
+
+                    
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <h2>Your Order</h2>
+                        <div class="cart-items-container"></div>
+                        <div class="cart-footer">
+                            <div class="row total-row">
+                                <div class="col-xs-10">
+                                    Subtotal:
+                                </div>
+                                <div class="col-xs-2">
+                                    $<span class="subtotal"></span>
+                                </div>
+                                <div class="col-xs-10">
+                                    Tax:
+                                </div>
+                                <div class="col-xs-2">
+                                    $<span class="tax"></span>
+                                </div>
+                                <div class="col-xs-10">
+                                    Grand Total:
+                                </div>
+                                <div class="col-xs-2">
+                                    $<span class="grand-total"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 button-row">
+                                    <button type="button" class="btn btn-primary place-order">Place My Order</button>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4">
+                        <div class="menu-container"></div>        
+                    
+            
+
+                
+                        <h3>Pizza</h3>
+                        <div class="pizza">
+                            <div class="tempp">
+                                <dl>
+                                    <dt class="name"></dt>
+                                    <img class="pic" src="" alt=""/>
+                                    <dd class="item">
+                                        <strong>
+                                            <span class="price sm"></span>
+                                            <span class="price md"></span>
+                                            <span class="price lg"></span>
+                                        </strong>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <p></p>
+                        <p><img src="img/carrot.png" alt="vegetarian icon"> = Vegetarian</p>
+
+                        <h3>Drinks</h3>
+                        <div class="drink">
+                            <div class="tempd">
+                                <ul>
+                                    <li class="item">
+                                        <span class="name"></span>
+                                        <strong>
+                                            <span class="price"></span>
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h3>Desserts</h3>
+                        <div class="dessert">
+                            <div class="tempds">
+                                <ul>
+                                    <li class="item">
+                                        <span class="name"></span>
+                                        <strong>
+                                            <span class="price"></span>
+                                        </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div> <!-- .menu container--> 
+                 
+
+                <!-- cart item template -->
+                <div class="cart-item-template cart-item row">
+                    <div class="col-xs-10">
+                        <p><button type="button" class="btn btn-default btn-xs remove-item">&times;</button> 
+                            <span class="title"></span>
+                        </p>
+                    </div>
+                    <div class="col-xs-2 col-price">
+                        <p>$<span class="price"></span></p>
+                    </div>
+                </div> <!-- .cart-item-template --> 
+
+            </form> 
+
+            
+
+            <footer>
+                <p>Call us for delivery: 206-555-1212 <br> &copy;2013 Dawg Pizza</p>
+            </footer>
+        </div> <!-- .container -->
+
+        <!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        
+        <!-- direct link to menu script -->
+        <script src="http://www.dawgpizza.com/orders/menu.js"></script>
+
+        <!-- my own JavaScript file, which will use the menu data structure -->
+        <script src="js/order-items.js"></script>
+
+        <script src="js/order-items-cart.js"></script>
+    </body>
+</html>
